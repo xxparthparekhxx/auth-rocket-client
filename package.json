@@ -1,0 +1,44 @@
+{
+  "name": "auth-rocket-client",
+  "version": "1.0.0",
+  "description": "A TypeScript library for managing authentication and authorization with simple APIs for login, registration, token verification, and user management.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "clean": "rm -rf dist",
+    "lint": "eslint src --ext .ts",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "author": "xxparthparekhxx",
+  "license": "ISC",
+  "keywords": [
+    "authentication",
+    "authorization",
+    "typescript",
+    "auth",
+    "security",
+    "jwt",
+    "rxjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/auth-rocket-client.git"
+  },
+  "homepage": "https://github.com/yourusername/auth-rocket-client#readme",
+  "bugs": {
+    "url": "https://github.com/yourusername/auth-rocket-client/issues"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "rxjs": "^7.3.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.3.0",
+    "@typescript-eslint/parser": "^4.3.0",
+    "eslint": "^7.30.0",
+    "eslint-plugin-react": "^7.35.0",
+    "typescript": "^4.3.5"
+  }
+}
